@@ -1,0 +1,15 @@
+Numba Summary (https://www.youtube.com/watch?v=x58W9A2lnQc)
+
+1) only use njit() - 'object mode' is not recommended
+
+2) Do not use Python-list but use np.array - list leads to errors
+
+3) If the numba can know what the type and length of argument will be, it is great for the speed
+
+4) vectorize
+- you can define a function in a scalar way, and 
+- use it in vector way by using vectorize() 
+
+5) from numba import prange
+- this let you know whether you can use numba or not!
+
